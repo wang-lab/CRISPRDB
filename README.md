@@ -28,7 +28,7 @@ CRISPRDB is a tool for designing guide RNAs (gRNAs) for use in the CRISPR/Cas9 s
    
 ## Installation and Usage
 
-* The easiest way to get the needed prerequisites to run CRISPRon is through conda. If you have conda installed already you can skip this step, otherwise go to https://docs.conda.io/en/latest/miniconda.html(https://docs.conda.io/en/latest/miniconda.html) to learn how to install conda on your system. Once conda is correctly installed. You need to install the CRISPRDB requirements with
+* The easiest way to get the needed prerequisites to run CRISPRon is through conda. If you have conda installed already you can skip this step, otherwise go to https://docs.conda.io/en/latest/miniconda.html to learn how to install conda on your system. Once conda is correctly installed. You need to install the CRISPRDB requirements with
 ```
    conda create -y -c bioconda -c conda-forge -n crisprdb python=3 numpy=1.21.5 tensorflow=2.4.1 scipy=1.7.3 scikit-learn=0.20.3 xgboost=0.80 pandas=1.3.5 biopython=1.79 viennarna=2.2.5 joblib=0.16.0 
    pip3 install ray=1.0.1
