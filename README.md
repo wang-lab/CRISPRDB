@@ -8,10 +8,10 @@ CRISPRDB is a tool for designing guide RNAs (gRNAs) for use in the CRISPR/Cas9 s
    Linux: Ubuntu 18.04.4
    Linux: CentOS 7.1.1503
 ```
-* Perl 5 interpreter or higher on a Red-Hat compatible Linux system is required.
+* Perl 5 interpreter or higher on a compatible Linux system is required.
    * [Installation instruction](https://learn.perl.org/installing/)
    * [Perl download](https://www.perl.org/get.html)
-* The versions of Python packages which sgDesigner used are, specifically:
+* The versions of Python3 packages which CRISPRDB used are, specifically:
 ```
    numpy: 1.21.5
    tensorflow: 2.4.1
@@ -25,16 +25,26 @@ CRISPRDB is a tool for designing guide RNAs (gRNAs) for use in the CRISPR/Cas9 s
    keras: 2.2.4 (in order to run multiple public algorithms, we have a modified keras package for CRISPRDB saved in /crisprdb/ensemble/packages.zip)
    ray: 1.0.1
 ```
+* The versions of Python2 packages which CRISPRDB used are, specifically:
+```
+   biopython: 1.73
+	scipy: 1.1.0
+	tensorflow: 1.4.1
+	scikit-learn: 0.20.3
+	xgboost: 0.82
+	numpy: 1.14.5
+```
   
    
 ## Installation and Usage
 
 * Download the compressed file of CRISPRDB through 'Download zip' from Github.
-* The easiest way to get the needed prerequisites to run CRISPRDB is through conda. If you have conda installed already you can skip this step, otherwise go to https://docs.conda.io/en/latest/miniconda.html to learn how to install conda on your system. Once conda is correctly installed. You need to install the CRISPRDB requirements with
+* The easiest way to get the needed python3 prerequisites to run CRISPRDB is through conda. If you have conda installed already you can skip this step, otherwise go to https://docs.conda.io/en/latest/miniconda.html to learn how to install conda on your system. Once conda is correctly installed. You need to install the CRISPRDB requirements with
 ```
    conda create -y -c bioconda -c conda-forge -n crisprdb python=3 numpy=1.21.5 tensorflow=2.4.1 scipy=1.7.3 scikit-learn=0.20.3 xgboost=0.80 pandas=1.3.5 biopython=1.79 viennarna=2.2.5 joblib=0.16.0 
    pip3 install ray=1.0.1
 ```
+* Install each python2 pachages using 'pip2 install package' command (replace 'package' with specific package names).
 * Place the crisprdb.tar file anywhere in your Linux system and uncompress it.
 * Extract all fills from /crisprdb/ensemble/packages.zip to /crisprdb/ensemble/packages.
 * Copy your input FASTA file into the newly created crisprdb directory.
