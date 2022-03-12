@@ -28,11 +28,11 @@ CRISPRDB is a tool for designing guide RNAs (gRNAs) for use in the CRISPR/Cas9 s
 * The versions of Python2 packages which CRISPRDB used are, specifically:
 ```
    biopython: 1.73
-	scipy: 1.1.0
-	tensorflow: 1.4.1
-	scikit-learn: 0.20.3
-	xgboost: 0.82
-	numpy: 1.14.5
+   scipy: 1.1.0
+   tensorflow: 1.4.1
+   scikit-learn: 0.20.3
+   xgboost: 0.82
+   numpy: 1.14.5
 ```
   
    
