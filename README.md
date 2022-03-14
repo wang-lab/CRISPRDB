@@ -13,6 +13,7 @@ CRISPRDB is a tool for designing guide RNAs (gRNAs) for use in the CRISPR/Cas9 s
    * [Perl download](https://www.perl.org/get.html)
 * The versions of Python3 packages which CRISPRDB used are, specifically:
 ```
+   python: 3.7
    numpy: 1.21.5
    tensorflow: 2.4.1
    scipy: 1.7.3
@@ -27,6 +28,7 @@ CRISPRDB is a tool for designing guide RNAs (gRNAs) for use in the CRISPR/Cas9 s
 ```
 * The versions of Python2 packages which CRISPRDB used are, specifically:
 ```
+   python: 2.7
    biopython: 1.73
    scipy: 1.1.0
    tensorflow: 1.4.1
